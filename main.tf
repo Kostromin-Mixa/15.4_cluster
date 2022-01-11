@@ -83,7 +83,7 @@ resource "yandex_mdb_mysql_cluster" "network" {
   name        = "study"
   environment = "PRESTABLE"
   network_id  = yandex_vpc_network.network.id
-  deletion_protection = false
+  deletion_protection = true
   version     = "8.0"
 
   resources {
