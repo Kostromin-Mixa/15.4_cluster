@@ -242,10 +242,3 @@ resource "yandex_kubernetes_node_group" "my_node_group" {
 
     }
   }
-mysql --host=rc1b-nw9zsy4cqcyfflxm.mdb.yandexcloud.net \
-      --port=3306 \
-      --ssl-ca=~/.mysql/root.crt \
-      --ssl-mode=VERIFY_IDENTITY \
-      --user=mixa \
-      --password \
-      netology_db
